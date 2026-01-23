@@ -26,6 +26,7 @@ def compute_integrity_fingerprint(data: bytes) -> str:
 
     return h.digest()
 
+# TODO: Modify this function
 def verify_integrity(data: bytes, expected_hex: str) -> bool:
     actual = compute_integrity_fingerprint(data)
     return actual == expected_hex
