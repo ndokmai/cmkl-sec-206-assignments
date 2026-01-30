@@ -31,14 +31,6 @@ Important notes
 - Each user MUST have a UNIQUE RANDOM SALT.
 - Store the salt alongside the hash (salt is not secret).
 - The database should not store plaintext passwords.
-
-Run
----
-python lab_2b.py
-
-Dependencies
-------------
-- argon2-cffi: pip install argon2-cffi
 """
 
 from __future__ import annotations
