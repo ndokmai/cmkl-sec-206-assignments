@@ -60,6 +60,8 @@ def ecdhe_shared_secret(my_priv: ECC.EccKey, peer_pub: ECC.EccKey) -> bytes:
     TODO:
       Compute the ECDHE shared secret Z using the provided cryptographic library.
       This function should return the same byte string on both Alice's and Bob's side.
+      For kdf, we will use  kdf=lambda z: z and derive the two-way keys manually for the purpose
+      of this exercise.
     """
     raise NotImplementedError
 
