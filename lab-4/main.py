@@ -24,7 +24,7 @@ You must complete the two TODO functions below:
 
   2) derive_two_way_keys(Z, salt, ctx)
      - Use HKDF-SHA256 to derive two independent session keys from Z.
-     - The two keys must be bound to different directions (A?B and B?A).
+     - The two keys must be bound to different directions (A -> B and B -> A).
      - The derived keys should be suitable for later use with AEAD.
 
 Rules
@@ -65,14 +65,14 @@ def ecdhe_shared_secret(my_priv: ECC.EccKey, peer_pub: ECC.EccKey) -> bytes:
 
 
 # ============================================================
-# TODO 2: HKDF ? two directional session keys
+# TODO 2: HKDF -> two directional session keys
 # ============================================================
 def derive_two_way_keys(Z: bytes, salt: bytes, ctx: bytes) -> tuple[bytes, bytes]:
     """
     TODO:
       Derive two independent session keys from Z using HKDF-SHA256:
-        - one key for Alice ? Bob
-        - one key for Bob   ? Alice
+        - one key for Alice -> Bob
+        - one key for Bob   -> Alice
       The two keys must be different and reproducible on both sides.
     """
     raise NotImplementedError
