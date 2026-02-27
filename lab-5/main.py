@@ -1,7 +1,7 @@
 """
 Lab 5: Server-Authenticated ECDHE Secure Channel
 
-Student TODOs (implement these first)
+TODOs
 -------------------------------------
 1) `sign_handshake_transcript(signing_priv, transcript) -> bytes`
 2) `verify_handshake_signature(signing_pub, transcript, signature) -> None`
@@ -9,8 +9,6 @@ Student TODOs (implement these first)
 Learning objective
 ------------------
 Compose ECDSA authentication with ECDHE key exchange in a simplified TLS-like flow.
-
-This file is intentionally small so students can complete it quickly.
 """
 
 from __future__ import annotations
